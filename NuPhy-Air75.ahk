@@ -14,12 +14,12 @@ Suspend, Permit
 Suspend
 If (A_IsSuspended)
 {
-  TrayTip,, RK61 script disabled
+  TrayTip,, NuPhy-Air75 script disabled
   Menu, Tray,  Icon, keyboard_off.ico, 1, 1
 
   
 } else { 
-  TrayTip,, RK61 script enabled
+  TrayTip,, NuPhy-Air75 enabled
   Menu, Tray,  Icon, keyboard_on.ico, 1, 1
 
 }
