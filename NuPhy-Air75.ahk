@@ -5,6 +5,7 @@
 ; PLEASE USE THE NUPHY UTIL
 ; Details: https://discord.com/channels/864389832829567067/864414174142529537
 
+#InstallKeybdHook
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
@@ -30,8 +31,21 @@ If (A_IsSuspended)
 Return 
 
 ; Permanently swap Left ALT and Left WinKey
-LAlt::LWin
-$LWin::LAlt
+$LAlt Up::
+  Send {LWinUp}
+  Return
+
+$LWin Up::
+  Send {LAlt Up}
+  Return
+
+$LAlt::
+  Send {LWinDown}
+  Return
+
+$LWin::
+  Send {LAlt Down}
+  Return  
 
 CapsLock & F7::Send {Media_Prev}
 CapsLock & F8::Send {Media_Play_Pause}
