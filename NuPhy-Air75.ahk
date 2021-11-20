@@ -1,10 +1,14 @@
 ﻿; Mechanical Keyboard remapper
 ; Works on NuPhy-75 in Mac Mode
 
+; THIS SOFTWARE IS NO LONGER REQUIRED
+; PLEASE USE THE NUPHY UTIL
+; Details: https://discord.com/channels/864389832829567067/864414174142529537
+
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
-SetCapsLockState, AlwaysOff
+; SetCapsLockState, AlwaysOff
 SetWorkingDir, %A_ScriptDir%
 
 Menu, Tray,  Icon, keyboard_on.ico, 1, 1
